@@ -16,7 +16,7 @@
             {
                 // Kui kasutaja sisestab midagi, siis muutub taustavärv roheliseks.
                 Console.BackgroundColor = ConsoleColor.Green;
-                Console.WriteLine("Sisestasid enda nime.");
+                Console.WriteLine("Sisestasid enda nime. Väga sigma.");
                 Console.WriteLine(name);
             }
             else
