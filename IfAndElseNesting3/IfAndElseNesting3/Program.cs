@@ -6,12 +6,14 @@
         {
             Console.WriteLine("If ja Else tingimuslausete pesastamine 3.");
             // Konsool küsib numbrit.
+            // Kasutaja sisestab numbri.
             // If võrdub 12.
             // Else if ja siia sisse omakorda teha if ning else. Else if tingimus on, et
             // muutuja on suurem kui 20.
             // Else ja seal väljastab konsool teksti: Mingid kahtlased väärtused.
 
-            int y = 10;
+            Console.Write("Sisesta number: ");
+            int y = int.Parse(Console.ReadLine());
 
             if (y == 12)
             {
