@@ -17,7 +17,26 @@ namespace IfAndElseAutod
 
             if (carManufacturer == "BMW")
             {
-                Console.WriteLine("Tahad osta BMW'd. Oled vist kõva bemmivend.");
+                Console.WriteLine("Tahad osta BMW'd. Oled vist kõva bemmivend. Kas i8, E46, või E60 M5?");
+
+                string bmwModel = Console.ReadLine();
+
+                if (bmwModel == "i8")
+                {
+                    Console.WriteLine("Tahad osta BMW i8.");
+                }
+                else if (bmwModel == "E46")
+                {
+                    Console.WriteLine("Tahad osta BMW E46.");
+                }
+                else if (bmwModel == "E60 M5")
+                {
+                    Console.WriteLine("Tahad osta BMW E60 M5.");
+                }
+                else
+                {
+                    Console.WriteLine("Meie autovalikus ei ole muid BMW mudeleid.");
+                }
             }
             else if (carManufacturer == "Audi")
             {
