@@ -16,21 +16,26 @@
                // Kasutaja sisestab numbri stringina.
                string numberInput = Console.ReadLine();
 
-               // Programm parsib sisestatud numbri täisarvuks.
+               // Programm parsib sisestatud numbri täis- või ujukomaarvuks.
                double numberParsedFormat = double.Parse(numberInput);
 
                // If ja Else juures toimub kontroll, kas arv on paarisarv, paaritu arv, või ujukomaarv (ratsionaal- või irratsionaalarv).
                if (numberParsedFormat % 1 != 0)
                {
+                    // Kutsub välja meetodi SayNumberNotAnInt(), mis ütleb, et arv ei ole täisarv.
                    SayNumberNotAnInt();
                }
                else if (numberParsedFormat % 2 == 0)
                {
+                    // Kutsub välja meetodi SayNumberEven(), mis ütleb, et arv on paarisarv.
+                    // Muutuja isAnInteger väärtus on true, see tähendab, et arv on paaris või paaritu täisarv.
                    SayNumberEven();
                     isAnInteger = true;
                }
                else
                {
+                    // Kutsub välja meetodi SayNumberOdd(), mis ütleb, et arv on paaritu arv.
+                    // Muutuja isAnInteger väärtus on true, see tähendab, et arv on paaris või paaritu täisarv.
                    SayNumberOdd();
                     isAnInteger = true;
                }
