@@ -53,7 +53,7 @@ namespace SwitchTöö
                     else if (userName == "Benjamin Netanyahu")
                     {
                         Console.WriteLine("Oh hell nah!");
-                        System.Environment.Exit();
+                        Environment.Exit(0);
                     }
                     else
                     {
