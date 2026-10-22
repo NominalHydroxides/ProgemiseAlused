@@ -46,7 +46,19 @@ namespace SwitchTöö
                     Console.Clear();
                     Console.WriteLine("Mis su nimi on?");
                     string userName = Console.ReadLine();
-                    Console.WriteLine($"Sinu nimi on {userName}");
+                    if (userName == "Adolf Hitler")
+                    {
+                        Console.WriteLine("SIEG HEIL!");
+                    }
+                    else if (userName == "Benjamin Netanyahu")
+                    {
+                        Console.WriteLine("Oh hell nah!");
+                        System.Environment.Exit();
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Sinu nimi on {userName}");
+                    }
                     break;
 
                 default:
