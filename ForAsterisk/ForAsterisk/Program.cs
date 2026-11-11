@@ -13,7 +13,7 @@
             // String amountOfLines is parsed into an integer called nominalAmountOfIterations.
             int nominalAmountOfIterations = int.Parse(amountOfLines);
 
-            // Iteration statement For: The following statement is iterated (repeatedly executed) until the console has printed enough lines (The amount of printed lines match the integer value of nominalAmountOfIterations).
+            // Iteration statement For: The following statement is iterated (repeatedly executed) until the console has printed enough lines (The amount of printed lines matches the integer value of nominalAmountOfIterations).
             for (int i = 0; i < nominalAmountOfIterations; i++)
             {
                 Console.WriteLine("*");
