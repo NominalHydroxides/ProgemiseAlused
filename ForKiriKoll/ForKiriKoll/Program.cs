@@ -6,8 +6,13 @@
         {
             Console.WriteLine("Kiri Koll");
 
-            for (int i = 0; i < 3; i++)
+            Console.WriteLine("Sisesta soovitud korduste arv: ");
+            string inputNominal = Console.ReadLine();
+            int nominalAmountOfMostOuterIterations = int.Parse(inputNominal);
+
+            for (int n = 1; n <= nominalAmountOfMostOuterIterations; n++)
             {
+                Console.WriteLine("See on rida nr {0}", n);
                 for (int j = 0; j < 2; j++)
                 {
                     Console.WriteLine("kill-koll");
@@ -16,6 +21,7 @@
 
                 Console.WriteLine("killadi-koll");
                 Thread.Sleep(496);
+
             }
         }
     }
